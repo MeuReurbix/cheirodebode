@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 
 <head>
@@ -6,246 +7,256 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cheiro de Bode | Atitude e Tradição</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+```
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #ffffff;
-            color: #222;
-        }
+    html {
+        scroll-behavior: smooth;
+    }
 
-        header {
-            background: #000;
-            color: white;
-            padding: 25px;
-            text-align: center;
-        }
+    body {
+        font-family: Arial, sans-serif;
+        background: #ffffff;
+        color: #222;
+    }
 
-        header h1 {
-            font-size: 3rem;
-        }
+    header {
+        background: #000;
+        color: white;
+        padding: 25px;
+        text-align: center;
+    }
 
-        header p {
-            color: #c8a24a;
-            font-size: 1.3rem;
-            margin-top: 10px;
-        }
+    header h1 {
+        font-size: 3rem;
+    }
 
-        .hero {
-            padding: 80px 20px;
-            text-align: center;
-        }
+    header p {
+        color: #c8a24a;
+        font-size: 1.3rem;
+        margin-top: 10px;
+    }
 
-        .hero img {
-            width: 300px;
-            max-width: 90%;
-            border-radius: 20px;
-            margin-bottom: 30px;
-        }
+    nav {
+        background: #111;
+        padding: 18px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        text-align: center;
+        box-shadow: 0 2px 10px rgba(0,0,0,.2);
+    }
 
-        .hero h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
+    nav a {
+        color: #c8a24a;
+        margin: 0 20px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+    }
 
-        .hero p {
-            max-width: 800px;
-            margin: auto;
-            line-height: 1.8;
-            font-size: 1.1rem;
-        }
+    nav a:hover {
+        color: #fff;
+    }
 
-        .botao {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 15px 35px;
-            background: #000;
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-        }
+    .hero {
+        padding: 80px 20px;
+        text-align: center;
+    }
 
-        section {
-            padding: 80px 10%;
-        }
+    .hero img {
+        width: 300px;
+        max-width: 90%;
+        border-radius: 20px;
+        margin-bottom: 30px;
+    }
 
-        section h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            color: #c8a24a;
-        }
+    .hero h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #c8a24a;
+    }
 
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-        }
+    .hero p {
+        max-width: 800px;
+        margin: auto;
+        line-height: 1.8;
+        font-size: 1.1rem;
+    }
 
-        .card {
-            background: #f5f5f5;
-            padding: 40px;
-            text-align: center;
-            border-radius: 15px;
-        }
+    .botao {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 15px 35px;
+        background: #000;
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+    }
 
-        footer {
-            background: #000;
-            color: white;
-            text-align: center;
-            padding: 40px;
-        }
-    </style>
+    .botao:hover {
+        background: #c8a24a;
+    }
+
+    section {
+        padding: 80px 10%;
+    }
+
+    section h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        color: #c8a24a;
+        font-size: 2.2rem;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: #f5f5f5;
+        padding: 40px;
+        text-align: center;
+        border-radius: 15px;
+        font-size: 1.2rem;
+    }
+
+    footer {
+        background: #000;
+        color: #fff;
+        padding: 40px 20px;
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    .whatsapp {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        background: #25D366;
+        color: white;
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 34px;
+        text-decoration: none;
+        box-shadow: 0 5px 15px rgba(0,0,0,.3);
+        z-index: 999;
+    }
+</style>
+```
+
 </head>
 
 <body>
-<nav style="
-background:#111;
-padding:18px;
-position:sticky;
-top:0;
-z-index:1000;
-text-align:center;
-box-shadow:0 2px 10px rgba(0,0,0,0.2);">
 
-<a href="#inicio" style="
-color:#c8a04a;
-margin:0 20px;
-text-decoration:none;
-font-weight:bold;
-font-size:16px;">
-Início
-</a>
-
-<a href="#idealizador" style="
-color:#c8a04a;
-margin:0 20px;
-text-decoration:none;
-font-weight:bold;
-font-size:16px;">
-Idealizador
-</a>
-
-<a href="#produtos" style="
-color:#c8a04a;
-margin:0 20px;
-text-decoration:none;
-font-weight:bold;
-font-size:16px;">
-Produtos
-</a>
-
-<a href="#contato" style="
-color:#c8a04a;
-margin:0 20px;
-text-decoration:none;
-font-weight:bold;
-font-size:16px;">
-Contato
-</a>
-
+```
+<nav>
+    <a href="#inicio">Início</a>
+    <a href="#idealizador">Idealizador</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#contato">Contato</a>
 </nav>
-    <header id="inicio">
-        <h1>CHEIRO DE BODE</h1>
-        <p>Atitude e Tradição</p>
-    </header>
 
-    <section class="hero">
+<header id="inicio">
+    <h1>CHEIRO DE BODE</h1>
+    <p>Atitude e Tradição</p>
+</header>
 
-        <section class="hero">
+<section class="hero">
 
-        <img src="logo.jpg" alt="Logo Cheiro de Bode"
-        style="max-width:400px; width:90%; margin-bottom:40px;">
+    <img src="logo.jpg"
+         alt="Logo Cheiro de Bode"
+         style="max-width:400px; width:90%; margin-bottom:40px;">
 
-        <h2>Mais que produtos. Uma identidade.</h2>
+    <h2>Mais que produtos. Uma identidade.</h2>
 
-        <p>
-            A Cheiro de Bode nasce para celebrar a tradição, a fraternidade e a autenticidade.
-            Inspirada no universo maçônico e no espírito de irmandade, a marca desenvolve produtos
-            exclusivos que unem qualidade, estilo e pertencimento.
-        </p>
+    <p>
+        A Cheiro de Bode nasce para celebrar a tradição, a fraternidade e a autenticidade.
+        Inspirada no universo maçônico e no espírito de irmandade, a marca desenvolve produtos exclusivos que unem qualidade, estilo e pertencimento.
+    </p>
 
-        <a class="botao" href="https://wa.me/5527999661769" target="_blank">
-            Fale Conosco
-        </a>
+    <a class="botao"
+       href="https://wa.me/5527999661769"
+       target="_blank">
+        Fale Conosco
+    </a>
 
-    </section>
+</section>
 
-    <section>
+<section id="idealizador">
 
-        <section id="idealizador">
-
-        <section id="idealizador">
-<h2>O Idealizador</h2>
+    <h2>O Idealizador</h2>
 
     <div style="text-align:center;">
 
-    <img src="carlos.jpg"
-         alt="Carlos Cezar"
-         style="width:300px;
-                max-width:90%;
-                border-radius:20px;
-                margin-bottom:30px;
-                box-shadow:0 10px 30px rgba(0,0,0,0.2);">
+        <img src="carlos.jpg"
+             alt="Carlos Cezar"
+             style="width:300px;
+                    max-width:90%;
+                    border-radius:20px;
+                    margin-bottom:30px;
+                    box-shadow:0 10px 30px rgba(0,0,0,0.2);">
 
-</div>
+    </div>
 
-<h3 style="text-align:center; color:#c8a04a;">
-Carlos Cezar Gonçalves da Rocha
-</h3>
+    <h3 style="text-align:center; color:#c8a04a; margin-bottom:30px;">
+        Carlos Cezar Gonçalves da Rocha
+    </h3>
 
-<p style="text-align:justify; line-height:2; max-width:850px; margin:0 auto; font-size:18px; padding:0 20px;">
+    <p style="text-align:justify;
+              line-height:2;
+              max-width:850px;
+              margin:0 auto;
+              font-size:18px;
+              padding:0 20px;">
 
-Carlos Cezar Gonçalves da Rocha é advogado, professor, escritor, poeta e líder maçônico, com quase quatro décadas de atuação nas áreas jurídica, cultural e institucional.
+        Carlos Cezar Gonçalves da Rocha é advogado, professor, escritor, poeta e líder maçônico, com quase quatro décadas de atuação nas áreas jurídica, cultural e institucional.
 
-<br><br>
+        <br><br>
 
-Presidente da Academia Maçônica de Letras do Espírito Santo (AMLES), ocupa a Cadeira nº 5 da instituição e desenvolve expressiva atuação no incentivo à produção intelectual e à valorização da cultura maçônica.
+        Presidente da Academia Maçônica de Letras do Espírito Santo (AMLES), ocupa a Cadeira nº 5 da instituição e desenvolve expressiva atuação no incentivo à produção intelectual e à valorização da cultura maçônica.
 
-<br><br>
+        <br><br>
 
-Autor das obras <em>Opúsculo – Volume I</em> e <em>Opúsculo – Volume II</em>, possui vasta produção literária composta por artigos, ensaios, crônicas e poesias, acumulando mais de um milhão de acessos em plataformas digitais.
+        Autor das obras <em>Opúsculo – Volume I</em> e <em>Opúsculo – Volume II</em>, possui vasta produção literária composta por artigos, ensaios, crônicas e poesias, acumulando mais de um milhão de acessos em plataformas digitais.
 
-<br><br>
+        <br><br>
 
-Motociclista e triciclista há mais de 17 anos, é fundador da Subsede Cariacica do Motoclube Bodes do Asfalto e é amplamente conhecido pelo pseudônimo <strong>"Cheiro de Bode"</strong>.
+        Motociclista e triciclista há mais de 17 anos, é fundador da Subsede Cariacica do Motoclube Bodes do Asfalto e é amplamente conhecido pelo pseudônimo <strong>"Cheiro de Bode"</strong>.
 
-<br><br>
+        <br><br>
 
-Sua trajetória é marcada pelos valores da fraternidade, ética, tradição, cultura e compromisso com o desenvolvimento humano.
+        Sua trajetória é marcada pelos valores da fraternidade, ética, tradição, cultura e compromisso com o desenvolvimento humano.
 
-</p>
+    </p>
 
-    </section>
+</section>
 
-    
-       
-            <section id="produtos">
-<h2>Produtos em Breve</h2>
+<section id="produtos">
 
-        <div class="cards">
+    <h2>Produtos em Breve</h2>
 
-            <div class="card">👕 Camisetas</div>
+    <div class="cards">
+        <div class="card">👕 Camisetas</div>
+        <div class="card">🧢 Bonés</div>
+        <div class="card">🍺 Canecas</div>
+        <div class="card">🥃 Cachaças</div>
+    </div>
 
-            <div class="card">🧢 Bonés</div>
+</section>
 
-            <div class="card">🍺 Canecas</div>
-
-            <div class="card">🥃 Cachaças</div>
-
-        </div>
-
-    <section id="produtos">
-<footer style="
-background:#000;
-color:#fff;
-padding:40px 20px;
-text-align:center;
-margin-top:80px;">
+<footer id="contato">
 
     <h3 style="color:#c8a04a; margin-bottom:10px;">
         CHEIRO DE BODE
@@ -265,32 +276,14 @@ margin-top:80px;">
         <strong>@cheirodebode</strong>
     </p>
 
-<footer id="contato">
-    
+</footer>
 
 <a href="https://wa.me/5527999932380"
    target="_blank"
-   style="
-   position:fixed;
-   bottom:25px;
-   right:25px;
-   background:#25D366;
-   color:white;
-   width:65px;
-   height:65px;
-   border-radius:50%;
-   display:flex;
-   align-items:center;
-   justify-content:center;
-   font-size:34px;
-   text-decoration:none;
-   box-shadow:0 5px 15px rgba(0,0,0,.3);
-   z-index:999;">
-   💬
+   class="whatsapp">
+    💬
 </a>
+```
 
 </body>
-</html>
-
-
 </html>
